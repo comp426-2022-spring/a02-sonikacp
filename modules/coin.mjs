@@ -15,7 +15,7 @@
  */
 
 function coinFlip() {
-
+  return Math.random() * 2
 }
 
 /** Multiple coin flips
