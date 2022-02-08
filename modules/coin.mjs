@@ -38,7 +38,7 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-  // return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
+  return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
 
 /** Count multiple flips
