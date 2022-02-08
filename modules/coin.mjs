@@ -15,7 +15,7 @@
  */
 
 function coinFlip() {
-  return Math.random() * 2
+  return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
 
 /** Multiple coin flips
@@ -38,7 +38,7 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-
+  // return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
 
 /** Count multiple flips
@@ -78,3 +78,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
+export { coinFlip, coinFlips, countFlips, flipACoin }
