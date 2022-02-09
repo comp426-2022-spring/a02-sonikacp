@@ -91,9 +91,17 @@ console.log(countFlips(coinFlips(10)))
  */
 
 export function flipACoin(call) {
-
+  let flip = coinFlip();
+  let result;
+  if (call == flip) {
+    result = "win";
+  } else {
+    result = "lose";
+  }
+  let output = {call: call, flip: flip, result: result};
+  return output;
 }
-
+console.log(flipACoin("heads"));
 
 /** Export 
  * 
