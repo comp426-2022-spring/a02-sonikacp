@@ -40,9 +40,13 @@ console.log(coinFlip())
  */
 
 export function coinFlips(flips) {
-  
-  // return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
+  const results = [];
+  for (let i = 0; i < flips; i++) {
+    results.push(coinFlip());
+  }
+  return results;
 }
+console.log(coinFlips(10))
 
 /** Count multiple flips
  * 
@@ -57,9 +61,23 @@ export function coinFlips(flips) {
  * @returns {{ heads: number, tails: number }}
  */
 
+
 export function countFlips(array) {
+  let num_heads = 0;
+  let num_tails = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == "heads") {
+      num_heads++;
+    } else {
+      num_tails++;
+    }
+  }
+  let count = {heads: num_heads, tails: num_tails};
+  return count;
 
 }
+console.log(countFlips(coinFlips(10)))
 
 /** Flip a coin!
  * 
