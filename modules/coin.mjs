@@ -18,7 +18,7 @@ export function coinFlip() {
   return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 }
 
-console.log(coinFlip())
+// console.log(coinFlip())
 
 /** Multiple coin flips
  * 
@@ -46,7 +46,7 @@ export function coinFlips(flips) {
   }
   return results;
 }
-console.log(coinFlips(10))
+// console.log(coinFlips(10))
 
 /** Count multiple flips
  * 
@@ -77,7 +77,7 @@ export function countFlips(array) {
   return count;
 
 }
-console.log(countFlips(coinFlips(10)))
+// console.log(countFlips(coinFlips(10)))
 
 /** Flip a coin!
  * 
@@ -101,7 +101,7 @@ export function flipACoin(call) {
   let output = {call: call, flip: flip, result: result};
   return output;
 }
-console.log(flipACoin("heads"));
+// console.log(flipACoin("heads"));
 
 /** Export 
  * 
