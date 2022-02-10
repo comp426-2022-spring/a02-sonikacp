@@ -6,7 +6,7 @@ for (let i = 0; i < args[0].length; i++) {
   extracted = args[0].slice(9, 11);
 }
 // fix this
-if (process.argv.length < 2) {
+if (process.argv.length != 3) {
     console.log(coinFlips(1));
     console.log(countFlips(coinFlips(1)));
     process.exit(1);
