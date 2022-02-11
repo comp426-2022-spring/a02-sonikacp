@@ -1,6 +1,17 @@
 import { coinFlips, countFlips } from "./modules/coin.mjs";
 
-const args = process.argv.slice(2);
+// import { createRequire } from 'module';
+// const require = createRequire(import.meta.url);
+
+// const args = require('minimist')(process.argv.slice(2));
+
+// args['call'];
+// const call_arg = args.call;
+
+// if (call_arg !== 'heads' || call_arg!== 'tails') {
+
+// }
+// const args = process.argv.slice(2);
 if (args.length == 0) {
   let argOneFlip = coinFlips(1);
   console.log(argOneFlip);
