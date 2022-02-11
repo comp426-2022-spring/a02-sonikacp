@@ -5,17 +5,8 @@ const require = createRequire(import.meta.url);
 
 const args = require('minimist')(process.argv.slice(2));
 
-args['call'];
-const call_arg = args.call;
-// console.log('call_arg:', call_arg)
+const call_arg = args['call'];
 
-// if (call_arg != "heads" && call_arg != "tails") {
-//   console.error('Error: wrong input.\nUsage: node guess-flip --call=[heads|tails]');
-// } else if (call_arg == null) {
-//   console.error('Error: no input.\nUsage: node guess-flip --call=[heads|tails]');
-// } else {
-//   console.log(flipACoin(call_arg));
-// }
 
 if (call_arg == null) {
   console.log('Error: no input.\nUsage: node guess-flip --call=[heads|tails]');
