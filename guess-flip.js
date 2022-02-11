@@ -8,5 +8,6 @@ let extracted;
 for (let i = 0; i < args[0].length; i++) {
   extracted = args[0].slice(7, 12);
 }
+// console.log('args.length:', args.length);
 
 console.log(flipACoin(extracted));
