@@ -18,9 +18,9 @@ const call_arg = args.call;
 // }
 
 if (call_arg == null) {
-  console.error('Error: no input.\nUsage: node guess-flip --call=[heads|tails]');
+  console.log('Error: no input.\nUsage: node guess-flip --call=[heads|tails]');
 } else if (call_arg != "heads" && call_arg != "tails") {
-  console.error('Error: wrong input.\nUsage: node guess-flip --call=[heads|tails]');
+  console.log('Error: wrong input.\nUsage: node guess-flip --call=[heads|tails]');
 } else {
   console.log(flipACoin(call_arg));
 }
