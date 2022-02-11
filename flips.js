@@ -10,7 +10,12 @@ const number_arg = args['number'];
 if (number_arg == null) {
   let argOneFlip = coinFlips(1);
   console.log(argOneFlip);
-  console.log(countFlips(argOneFlip));
+  if (argOneFlip == ['heads']) {
+    console.log('{ heads: 1 }');
+  } else {
+    console.log('{ tails: 1 }');
+  }
+  // console.log(countFlips(argOneFlip));
 } else {
   let coinFlipsNum = coinFlips(number_arg);
   console.log(coinFlipsNum);
