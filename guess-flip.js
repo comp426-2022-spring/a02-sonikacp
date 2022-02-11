@@ -7,7 +7,7 @@ const args = require('minimist')(process.argv.slice(2));
 
 args['call'];
 const call_arg = args.call;
-console.log('call_arg:', call_arg)
+// console.log('call_arg:', call_arg)
 
 // if (call_arg != "heads" && call_arg != "tails") {
 //   console.error('Error: wrong input.\nUsage: node guess-flip --call=[heads|tails]');
